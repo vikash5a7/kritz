@@ -1,0 +1,13 @@
+<div class="container ">
+    <div class="my-1">
+        <label for="exampleFormControlInput1" class="form-label">Email Color name </label>
+        <input  name="color" type="email" class="form-control" [(ngModel)]="colorValue" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <button type="button"  (click)="setcolor(colorValue)" class="btn btn-primary">Submit</button>
+</div>
+
+<br>
+<div *ngIf="color" class="container">
+    <h1 [style.color]="color">Welcome to angular</h1>
+</div>
+
