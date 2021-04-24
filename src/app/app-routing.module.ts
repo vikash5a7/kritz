@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { TreksComponent } from './question/number-3/treks/treks.component';
 import { Com1Component } from './question/number-4/com1/com1.component';
 import { Com2Component } from './question/number-4/com2/com2.component';
 import { Com3Component } from './question/number-4/com3/com3.component';
@@ -16,7 +17,7 @@ const routes: Routes = [
       { path: "third-comp", component: Com3Component },
     ],
   },
-
+  { path: "trek", component: TreksComponent },
   { path: '', redirectTo: '/nav', pathMatch: 'full' },
 ];
 

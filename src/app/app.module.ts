@@ -10,6 +10,7 @@ import { Com1Component } from './question/number-4/com1/com1.component';
 import { Com2Component } from './question/number-4/com2/com2.component';
 import { Com3Component } from './question/number-4/com3/com3.component';
 import { NavBarComponent } from './question/number-4/nav-bar/nav-bar.component';
+import { TreksComponent } from './question/number-3/treks/treks.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavBarComponent } from './question/number-4/nav-bar/nav-bar.component';
     Com1Component,
     Com2Component,
     Com3Component,
-    NavBarComponent
+    NavBarComponent,
+    TreksComponent
   ],
   imports: [
     BrowserModule,

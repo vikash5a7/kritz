@@ -1,0 +1,23 @@
+<div class="container">
+    
+    <div class="p-3 mb-2 bg-info text-white text-center"><h2>Trek information..</h2></div>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">S.N</th>
+            <th scope="col">Name</th>
+            <th scope="col">Place</th>
+            <th scope="col">Price/day</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let trek of treks let i">
+            <th scope="row">{{trek.sn}}</th>
+            <td>{{trek.name}}</td>
+            <td>{{trek.place}}</td>
+            <td>{{trek.price|currency:USD}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>
